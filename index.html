@@ -27,10 +27,29 @@
 			margin:0;
 			padding:0;
 		}
-		section{
-			height:20%;
-			border-top:none;
+		header{
+			height:15%;
 			text-align:center;
+			position: relative;
+		}
+		section{
+			height:25%;
+			text-align:center;
+			position: relative;
+		}
+		footer{
+			height:20%;
+			text-align:center;
+			position: relative;
+		}
+		div{
+			height:50%;
+			position: absolute;
+    		top: 0;
+		    right: 0;
+		    bottom: 0;
+		    left: 0;
+		    margin: auto;
 		}
 		img{
 			padding-top:2px;
@@ -38,20 +57,502 @@
 	</style>
 </head>
 <body>
+	<header>
+		<div>
+			<img src="icon/板砖.png" title="板砖" onclick="onewuqi()">
+			<img src="icon/手电筒.png" title="手电筒" onclick="onewuqi()">
+		</div>
+	</header>
+	<header>
+		<div>
+			<img src="icon/三叉戟.png" title="三叉戟" onclick="twowuqi()">
+			<img src="icon/老鼠.png" title="老鼠" onclick="twowuqi()">
+			<img src="icon/平底锅.png" title="平底锅" onclick="twowuqi()">
+		</div>
+	</header>
 	<section>
-		<img src="icon/板砖.png"><img src="icon/手电筒.png">
+		<div>
+			<img src="icon/环扣刀.png" title="环扣刀" onclick="threewuqi()">
+			<img src="icon/开山斧.png" title="开山斧" onclick="threewuqi()">
+			<img src="icon/蛇矛.png" title="蛇矛" onclick="threewuqi()">
+			<img src="icon/双截棍.png" title="双截棍" onclick="threewuqi()">
+			<img src="icon/铁铲.png" title="铁铲" onclick="threewuqi()">
+			<img src="icon/木剑.png" title="木剑" onclick="threewuqi()">
+			<img src="icon/拳套.png" title="拳套" onclick="threewuqi()">
+			<img src="icon/短剑.png" title="短剑" onclick="threewuqi()">
+			<img src="icon/扳手.png" title="扳手" onclick="threewuqi()">
+			<img src="icon/汽水罐.png" title="汽水罐" onclick="threewuqi()">
+		</div>
 	</section>
 	<section>
-		<img src="icon/三叉戟.png">
+		<div>
+			<img src="icon/黑桃A.png" title="黑桃A" onclick="fourwuqi()">
+			<img src="icon/飞刀.png" title="飞刀" onclick="fourwuqi()">
+			<img src="icon/飞斧.png" title="飞斧" onclick="fourwuqi()">
+			<img src="icon/仙人掌.png" title="仙人掌" onclick="fourwuqi()">
+			<img src="icon/关刀.png" title="关刀" onclick="fourwuqi()">
+			<img src="icon/蛇影弓.png" title="蛇影弓" onclick="fourwuqi()">
+			<img src="icon/霹雳鞭.png" title="霹雳鞭" onclick="fourwuqi()">
+			<img src="icon/流星球.png" title="流星球" onclick="fourwuqi()">
+			<img src="icon/充气锤子.png" title="充气锤子" onclick="fourwuqi()">
+			<img src="icon/青龙戟.png" title="青龙戟" onclick="fourwuqi()">
+		</div>
 	</section>
-	<section>
-		<img src="icon/三叉戟.png">
-	</section>
-	<section>
-		<img src="icon/三叉戟.png">
-	</section>
-	<section>
-		<img src="icon/三叉戟.png">
-	</section>
+	<footer>
+		<div>
+			<img src="icon/判官笔.png" title="判官笔" onclick="fivewuqi()">
+			<img src="icon/红缨枪.png" title="红缨枪" onclick="fivewuqi()">
+			<img src="icon/折扇.png" title="折扇" onclick="fivewuqi()">
+			<img src="icon/水枪.png" title="水枪" onclick="fivewuqi()">
+			<img src="icon/狂魔镰.png" title="狂魔镰" onclick="fivewuqi()">
+		</div>
+	</footer>
 </body>
+<script>
+	function onewuqi(){
+		var one=2,
+		two=2,
+		three=2,
+		four=2,
+		five=2,
+		six=2,
+		seven=2,
+		eight=4,
+		nine=6,
+		ten=10;
+		var a=prompt("请输入当前技能等级");
+		var b=prompt("请输入当前祝福值");
+		var num1=Math.ceil((one-0)/4)*1,
+		num2=(Math.ceil((two-0)/4)+1)*2,
+		num3=(Math.ceil((three-0)/4)+1)*3,
+		num4=(Math.ceil((four-0)/4)+1)*4,
+		num5=(Math.ceil((five-0)/4)+1)*5,
+		num6=(Math.ceil((six-0)/4)+1)*6,
+		num7=(Math.ceil((seven-0)/4)+1)*7,
+		num8=(Math.ceil((eight-0)/4)+1)*8,
+		num9=(Math.ceil((nine-0)/4)+1)*9,
+		num10=(Math.ceil((ten-0)/4)+1)*10;
+		if(a==1){
+			num1=0;
+			num2=(Math.ceil((two-b)/4)+1)*2;
+		}else if(a==2){
+			num1=0;
+			num2=0;
+			num3=(Math.ceil((three-b)/4)+1)*3;
+		}else if(a==3){
+			num1=0;
+			num2=0;
+			num3=0;
+			num4=(Math.ceil((four-b)/4)+1)*4;
+		}else if(a==4){
+			num1=0;
+			num2=0;
+			num3=0;
+			num4=0;
+			num5=(Math.ceil((five-b)/4)+1)*5;
+		}else if(a==5){
+			num1=0;
+			num2=0;
+			num3=0;
+			num4=0;
+			num5=0;
+			num6=(Math.ceil((six-b)/4)+1)*6;
+		}else if(a==6){
+			num1=0;
+			num2=0;
+			num3=0;
+			num4=0;
+			num5=0;
+			num6=0;
+			num7=(Math.ceil((seven-b)/4)+1)*7;
+		}else if(a==7){
+			num1=0;
+			num2=0;
+			num3=0;
+			num4=0;
+			num5=0;
+			num6=0;
+			num7=0;
+			num8=(Math.ceil((eight-b)/4)+1)*8;
+		}else if(a==8){
+			num1=0;
+			num2=0;
+			num3=0;
+			num4=0;
+			num5=0;
+			num6=0;
+			num7=0;
+			num8=0;
+			num9=(Math.ceil((nine-b)/4)+1)*9;
+		}else if(a==9){
+			num1=0;
+			num2=0;
+			num3=0;
+			num4=0;
+			num5=0;
+			num6=0;
+			num7=0;
+			num8=0;
+			num9=0;
+			num10=(Math.ceil((ten-b)/4)+1)*10;
+		}
+		alert("满祝福一共需要"+(num1+num2+num3+num4+num5+num6+num7+num8+num9+num10)+"个卷轴");
+	}
+	function twowuqi(){
+		var one=2,
+		two=4,
+		three=4,
+		four=6,
+		five=6,
+		six=10,
+		seven=12,
+		eight=18,
+		nine=22,
+		ten=30;
+		var a=prompt("请输入当前技能等级");
+		var b=prompt("请输入当前祝福值");
+		var num1=Math.ceil((one-0)/4)*1,
+		num2=(Math.ceil((two-0)/4)+1)*2,
+		num3=(Math.ceil((three-0)/4)+1)*3,
+		num4=(Math.ceil((four-0)/4)+1)*4,
+		num5=(Math.ceil((five-0)/4)+1)*5,
+		num6=(Math.ceil((six-0)/4)+1)*6,
+		num7=(Math.ceil((seven-0)/4)+1)*7,
+		num8=(Math.ceil((eight-0)/4)+1)*8,
+		num9=(Math.ceil((nine-0)/4)+1)*9,
+		num10=(Math.ceil((ten-0)/4)+1)*10;
+		if(a==1){
+			num1=0;
+			num2=(Math.ceil((two-b)/4)+1)*2;
+		}else if(a==2){
+			num1=0;
+			num2=0;
+			num3=(Math.ceil((three-b)/4)+1)*3;
+		}else if(a==3){
+			num1=0;
+			num2=0;
+			num3=0;
+			num4=(Math.ceil((four-b)/4)+1)*4;
+		}else if(a==4){
+			num1=0;
+			num2=0;
+			num3=0;
+			num4=0;
+			num5=(Math.ceil((five-b)/4)+1)*5;
+		}else if(a==5){
+			num1=0;
+			num2=0;
+			num3=0;
+			num4=0;
+			num5=0;
+			num6=(Math.ceil((six-b)/4)+1)*6;
+		}else if(a==6){
+			num1=0;
+			num2=0;
+			num3=0;
+			num4=0;
+			num5=0;
+			num6=0;
+			num7=(Math.ceil((seven-b)/4)+1)*7;
+		}else if(a==7){
+			num1=0;
+			num2=0;
+			num3=0;
+			num4=0;
+			num5=0;
+			num6=0;
+			num7=0;
+			num8=(Math.ceil((eight-b)/4)+1)*8;
+		}else if(a==8){
+			num1=0;
+			num2=0;
+			num3=0;
+			num4=0;
+			num5=0;
+			num6=0;
+			num7=0;
+			num8=0;
+			num9=(Math.ceil((nine-b)/4)+1)*9;
+		}else if(a==9){
+			num1=0;
+			num2=0;
+			num3=0;
+			num4=0;
+			num5=0;
+			num6=0;
+			num7=0;
+			num8=0;
+			num9=0;
+			num10=(Math.ceil((ten-b)/4)+1)*10;
+		}
+		alert("满祝福一共需要"+(num1+num2+num3+num4+num5+num6+num7+num8+num9+num10)+"个卷轴");
+	}
+	function threewuqi(){
+		var one=2,
+		two=6,
+		three=8,
+		four=12,
+		five=14,
+		six=20,
+		seven=24,
+		eight=32,
+		nine=50,
+		ten=60;
+		var a=prompt("请输入当前技能等级");
+		var b=prompt("请输入当前祝福值");
+		var num1=Math.ceil((one-0)/4)*1,
+		num2=(Math.ceil((two-0)/4)+1)*2,
+		num3=(Math.ceil((three-0)/4)+1)*3,
+		num4=(Math.ceil((four-0)/4)+1)*4,
+		num5=(Math.ceil((five-0)/4)+1)*5,
+		num6=(Math.ceil((six-0)/4)+1)*6,
+		num7=(Math.ceil((seven-0)/4)+1)*7,
+		num8=(Math.ceil((eight-0)/4)+1)*8,
+		num9=(Math.ceil((nine-0)/4)+1)*9,
+		num10=(Math.ceil((ten-0)/4)+1)*10;
+		if(a==1){
+			num1=0;
+			num2=(Math.ceil((two-b)/4)+1)*2;
+		}else if(a==2){
+			num1=0;
+			num2=0;
+			num3=(Math.ceil((three-b)/4)+1)*3;
+		}else if(a==3){
+			num1=0;
+			num2=0;
+			num3=0;
+			num4=(Math.ceil((four-b)/4)+1)*4;
+		}else if(a==4){
+			num1=0;
+			num2=0;
+			num3=0;
+			num4=0;
+			num5=(Math.ceil((five-b)/4)+1)*5;
+		}else if(a==5){
+			num1=0;
+			num2=0;
+			num3=0;
+			num4=0;
+			num5=0;
+			num6=(Math.ceil((six-b)/4)+1)*6;
+		}else if(a==6){
+			num1=0;
+			num2=0;
+			num3=0;
+			num4=0;
+			num5=0;
+			num6=0;
+			num7=(Math.ceil((seven-b)/4)+1)*7;
+		}else if(a==7){
+			num1=0;
+			num2=0;
+			num3=0;
+			num4=0;
+			num5=0;
+			num6=0;
+			num7=0;
+			num8=(Math.ceil((eight-b)/4)+1)*8;
+		}else if(a==8){
+			num1=0;
+			num2=0;
+			num3=0;
+			num4=0;
+			num5=0;
+			num6=0;
+			num7=0;
+			num8=0;
+			num9=(Math.ceil((nine-b)/4)+1)*9;
+		}else if(a==9){
+			num1=0;
+			num2=0;
+			num3=0;
+			num4=0;
+			num5=0;
+			num6=0;
+			num7=0;
+			num8=0;
+			num9=0;
+			num10=(Math.ceil((ten-b)/4)+1)*10;
+		}
+		alert("满祝福一共需要"+(num1+num2+num3+num4+num5+num6+num7+num8+num9+num10)+"个卷轴");
+	}
+	function fourwuqi(){
+		var one=2,
+		two=6,
+		three=8,
+		four=14,
+		five=20,
+		six=24,
+		seven=32,
+		eight=50,
+		nine=74,
+		ten=100;
+		var a=prompt("请输入当前技能等级");
+		var b=prompt("请输入当前祝福值");
+		var num1=Math.ceil((one-0)/4)*1,
+		num2=(Math.ceil((two-0)/4)+1)*2,
+		num3=(Math.ceil((three-0)/4)+1)*3,
+		num4=(Math.ceil((four-0)/4)+1)*4,
+		num5=(Math.ceil((five-0)/4)+1)*5,
+		num6=(Math.ceil((six-0)/4)+1)*6,
+		num7=(Math.ceil((seven-0)/4)+1)*7,
+		num8=(Math.ceil((eight-0)/4)+1)*8,
+		num9=(Math.ceil((nine-0)/4)+1)*9,
+		num10=(Math.ceil((ten-0)/4)+1)*10;
+		if(a==1){
+			num1=0;
+			num2=(Math.ceil((two-b)/4)+1)*2;
+		}else if(a==2){
+			num1=0;
+			num2=0;
+			num3=(Math.ceil((three-b)/4)+1)*3;
+		}else if(a==3){
+			num1=0;
+			num2=0;
+			num3=0;
+			num4=(Math.ceil((four-b)/4)+1)*4;
+		}else if(a==4){
+			num1=0;
+			num2=0;
+			num3=0;
+			num4=0;
+			num5=(Math.ceil((five-b)/4)+1)*5;
+		}else if(a==5){
+			num1=0;
+			num2=0;
+			num3=0;
+			num4=0;
+			num5=0;
+			num6=(Math.ceil((six-b)/4)+1)*6;
+		}else if(a==6){
+			num1=0;
+			num2=0;
+			num3=0;
+			num4=0;
+			num5=0;
+			num6=0;
+			num7=(Math.ceil((seven-b)/4)+1)*7;
+		}else if(a==7){
+			num1=0;
+			num2=0;
+			num3=0;
+			num4=0;
+			num5=0;
+			num6=0;
+			num7=0;
+			num8=(Math.ceil((eight-b)/4)+1)*8;
+		}else if(a==8){
+			num1=0;
+			num2=0;
+			num3=0;
+			num4=0;
+			num5=0;
+			num6=0;
+			num7=0;
+			num8=0;
+			num9=(Math.ceil((nine-b)/4)+1)*9;
+		}else if(a==9){
+			num1=0;
+			num2=0;
+			num3=0;
+			num4=0;
+			num5=0;
+			num6=0;
+			num7=0;
+			num8=0;
+			num9=0;
+			num10=(Math.ceil((ten-b)/4)+1)*10;
+		}
+		alert("满祝福一共需要"+(num1+num2+num3+num4+num5+num6+num7+num8+num9+num10)+"个卷轴");
+	}
+	function fivewuqi(){
+		var one=2,
+		two=10,
+		three=14,
+		four=20,
+		five=24,
+		six=32,
+		seven=50,
+		eight=74,
+		nine=100,
+		ten=142;
+		var a=prompt("请输入当前技能等级");
+		var b=prompt("请输入当前祝福值");
+		var num1=Math.ceil((one-0)/4)*1,
+		num2=(Math.ceil((two-0)/4)+1)*2,
+		num3=(Math.ceil((three-0)/4)+1)*3,
+		num4=(Math.ceil((four-0)/4)+1)*4,
+		num5=(Math.ceil((five-0)/4)+1)*5,
+		num6=(Math.ceil((six-0)/4)+1)*6,
+		num7=(Math.ceil((seven-0)/4)+1)*7,
+		num8=(Math.ceil((eight-0)/4)+1)*8,
+		num9=(Math.ceil((nine-0)/4)+1)*9,
+		num10=(Math.ceil((ten-0)/4)+1)*10;
+		if(a==1){
+			num1=0;
+			num2=(Math.ceil((two-b)/4)+1)*2;
+		}else if(a==2){
+			num1=0;
+			num2=0;
+			num3=(Math.ceil((three-b)/4)+1)*3;
+		}else if(a==3){
+			num1=0;
+			num2=0;
+			num3=0;
+			num4=(Math.ceil((four-b)/4)+1)*4;
+		}else if(a==4){
+			num1=0;
+			num2=0;
+			num3=0;
+			num4=0;
+			num5=(Math.ceil((five-b)/4)+1)*5;
+		}else if(a==5){
+			num1=0;
+			num2=0;
+			num3=0;
+			num4=0;
+			num5=0;
+			num6=(Math.ceil((six-b)/4)+1)*6;
+		}else if(a==6){
+			num1=0;
+			num2=0;
+			num3=0;
+			num4=0;
+			num5=0;
+			num6=0;
+			num7=(Math.ceil((seven-b)/4)+1)*7;
+		}else if(a==7){
+			num1=0;
+			num2=0;
+			num3=0;
+			num4=0;
+			num5=0;
+			num6=0;
+			num7=0;
+			num8=(Math.ceil((eight-b)/4)+1)*8;
+		}else if(a==8){
+			num1=0;
+			num2=0;
+			num3=0;
+			num4=0;
+			num5=0;
+			num6=0;
+			num7=0;
+			num8=0;
+			num9=(Math.ceil((nine-b)/4)+1)*9;
+		}else if(a==9){
+			num1=0;
+			num2=0;
+			num3=0;
+			num4=0;
+			num5=0;
+			num6=0;
+			num7=0;
+			num8=0;
+			num9=0;
+			num10=(Math.ceil((ten-b)/4)+1)*10;
+		}
+		alert("满祝福一共需要"+(num1+num2+num3+num4+num5+num6+num7+num8+num9+num10)+"个卷轴");
+	}
+</script>
 </html>
